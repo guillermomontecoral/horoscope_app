@@ -93,4 +93,19 @@ dependencies {
     implementation ("androidx.camera:camera-lifecycle:${cameraVersion}")
     implementation ("androidx.camera:camera-view:${cameraVersion}")
     implementation ("androidx.camera:camera-extensions:${cameraVersion}")
+
+    //UnitTesting
+    testImplementation("junit:junit:4.13.2")
+    testImplementation ("io.kotlintest:kotlintest-runner-junit5:3.4.2")
+    //Mockear valores que se necesitan para testear otras cosas
+    testImplementation ("io.mockk:mockk:1.12.3")
+
+    //UITesting
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+//    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.5.1")
+//    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.4.0")
+//    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.48")
+//    androidTestImplementation ("androidx.fragment:fragment-testing:1.6.1")
+//    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
 }
